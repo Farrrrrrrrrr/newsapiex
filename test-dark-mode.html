@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="min-h-screen">
+    <div class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-8">
+        <h1 class="text-3xl font-bold mb-4">Dark Mode Test</h1>
+        <button 
+            onclick="document.documentElement.classList.toggle('dark')"
+            class="p-3 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
+        >
+            Toggle Dark Mode
+        </button>
+        <p class="mt-4">This is a test to see if dark mode classes work.</p>
+    </div>
+</body>
+</html>
